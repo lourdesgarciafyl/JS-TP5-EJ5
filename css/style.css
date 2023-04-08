@@ -2,7 +2,12 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 main{
     flex-grow: 1;
+}
+h1{
+    font-size: xx-large;
+    color: blue;
 }
