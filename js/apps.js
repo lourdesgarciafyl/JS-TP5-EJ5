@@ -13,21 +13,21 @@ btnPause.addEventListener(`click`, parar);
 btnReset.addEventListener(`click`, reiniciar);
 
 function empezar(){
-    control = setInterval(controlTiempo, 1000)
+    tiempo = setInterval(controlTiempo, 1000)
     btnStart.disabled = true;
     btnPause.disabled = false;
     btnReset.disabled = false;
 }
 
 function parar(){
-    clearInterval(control)
+    clearInterval(tiempo)
     btnStart.disabled = false
     btnPause.disabled = true
     btnReset.disabled = false
 }
 
 function reiniciar(){
-    clearInterval(control)
+    clearInterval(tiempo)
     parrafoHoras.innerHTML = `00`
     parrafoMinutos.innerHTML = `: 00`
     parrafoSegundos.innerHTML = `: 00`
